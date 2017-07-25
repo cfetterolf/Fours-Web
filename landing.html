@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Play Fours - Math Puzzles</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="css/style.css" rel="stylesheet">
+    
+  </head>
+  <body data-spy="scroll" data-target=".navbar-collapse">
+
+  <!---------- MARK: NAVBAR ---------->
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="www.getfoursapp.com" class="navbar-brand"><img src="assets/float_icon_4.png" width="40px" id="brandImage"></a>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#about">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Play <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Play Fours</a></li>
+            <li><a href="#">Scoreboard</a></li>
+            <li><a href="#">Tutorial</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://itunes.apple.com/us/app/fours-unlimited-kenken-puzzles!/id1181549788?mt=8" target="_blank">Download the App</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Login Form -->
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="email" placeholder="Email" class="form-control"></input>
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" class="form-control"></input>
+        </div>
+        <button type="submit" class="btn btn-success">Log In</button>
+      </form>
+
+      <button type="submit" class="navbar-right btn btn-default">Sign Up</button>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<!---------- MARK: BODY1 ---------->
+
+<div class="container contentContainer" id="home">
+  <div class="row">
+      <div class="col-sm-4 col-sm-offset-2">
+          <h1 class="center title big-title" id="topRow">FOURS</h1>
+          <p class="lead center">Play unlimited math puzzles, for free.</p>
+          <p class="bold"></p>
+          <p class="center">
+            <a href="https://itunes.apple.com/us/app/fours-unlimited-kenken-puzzles!/id1181549788?mt=8" target="_blank">
+              <img class="app-icon-small" src="assets/apple_logo.png" />
+            </a>
+            <a href="#" id="pop" data-toggle="modal" data-target="#myModal">
+              <img class="app-icon-small" src="assets/android_logo.png" />
+            </a>
+          </p>
+      </div>
+      
+      <div class="col-sm-6 vertical-center">
+          <img id="slider" src="assets/slide-4.png" class="img-fluid new-width marginBottom" alt="Responsive image">
+      </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Hang Tight!</h3>
+      </div>
+      <div class="modal-body">
+        Unfortunately, Fours is only available on iOS right now.  Keep your eyes peeled, though - Fours is coming to Android soon!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!---------- MARK: BODY2 ---------->
+
+<div class="container contentContainer" id="about">
+
+  <div class="row"><h1 class="marginTopBig"></h1></div>
+
+  <div class="row">
+    <div class="col-sm-6 vertical-center">
+      <img src="assets/example_image_full.png" class="img-fluid new-width marginBottom" alt="Responsive image">
+    </div>
+
+    <div class="col-sm-6">
+      <!-- <span><img src="assets/float_icon_3.png" class="float-icon"></span> -->
+      <h1 class="center"> What is Fours? </h1>
+      <hr></hr>
+      <p class="center marginBottom" id="description-text">Fours is an app that offers a modern take on the popular KenKen® puzzles. Fours can generate over 600,000 different puzzles, allows you to keep track of your best finish times, and includes engaging challenge modes to test your skills.  What's more, Fours not only allows you to play unlimited puzzles, it teaches you how to play with a step by step, interactive tutorial.</p>
+      <p></p>
+      <p class="center marginBottom" id="description-text">Fours puzzles, otherwise known as Mathdoku, are like Sudoku puzzles with an arithmetic twist. Each row and column must contain the numbers 1-4 with no repeated values, much like Sudoku. The board is broken up into cages, with each cage containing a "target" number and an operation. The values inside of each cage must use themselves, combined with the operator, to make the target number. Once the board is filled correctly, the puzzle is solved.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!---------- MARK: BODY3 ---------->
+
+<div class="container contentContainer" id="footer">
+  <div class="row">
+    <h1 class="center title">Get the App</h1>
+    <p class="lead center">Start your journey now, and download Fours for free!</p>
+    <p class="center"><a href="https://itunes.apple.com/us/app/fours-unlimited-kenken-puzzles!/id1181549788?mt=8" target="_blank">
+      <img id="appIcon" src="assets/app_store.svg" />
+    </a></p>
+  </div>
+</div>
+
+<!---------- MARK: FOOTER ---------->
+
+<footer class="footer center">
+  <div class="container">
+    <p class="footer-text">Questions, suggestions, or comments?  <a id="contactText" href="#" data-toggle="modal" data-target="#emailModal"><strong>Contact Me</strong></a></p>
+  </div>
+</footer>
+
+<!-- Email Modal -->
+<div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title">Contact Fours</h3>
+      </div>
+      <div class="modal-body">
+
+  <form id="contact-form" method="post" action="contact.php" role="form">
+
+        <div class="messages"></div>
+
+        <div class="controls">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="form_name">Name</label>
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="First & Last Name" required="required" data-error="Name is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="form_email">Email</label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="something@example.com" required="required" data-error="Valid email is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="form_message">Message *</label>
+                        <textarea id="form_message" name="message" class="form-control" placeholder="ex: Fours is awesome!!!" rows="4" required="required" data-error="Please,leave me a message."></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-success btn-send" value="Send">
+                </div>
+            </div>
+        </div>
+      </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+
+  $("#pop").on("click", function() {
+    $('#myModal').modal(show); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+  });
+  
+  var imgArray = [
+    'assets/slide-4.png',
+    'assets/slide-2.png',
+    'assets/slide-3.png',
+    'assets/slide-1.png'],
+    curIndex = 0;
+    imgDuration = 3000;
+
+  function slideShow() {
+    document.getElementById('slider').src = imgArray[curIndex];
+    curIndex++;
+    if (curIndex == imgArray.length) { curIndex = 0; }
+    setTimeout("slideShow()", imgDuration);
+}
+slideShow();
+
+</script>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="validator.js"></script>
+    <script src="contact.js"></script>
+
+    <script>$(".contentContainer").css("min-height",$(window).height());</script>
+
+  
+  </body>
+</html>
